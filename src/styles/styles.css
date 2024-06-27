@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+    z-index: 1;
+}
+
+.dot {
+    visibility: hidden;
+}
+
+.card {
+    z-index: 5;
+}
+
+.food-image {
+    width: 300px;
+}
+
+#app-container {
+    width: 90vw;
+}
+
+@media screen and (min-width: 768px) {
+    #app-container {
+        width: 75vw;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    #app-container {
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #app-container {
+        width: 45vw;
+    }
+}
